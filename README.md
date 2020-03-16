@@ -1,2 +1,3 @@
-# Vision-Notes
-📷 Notes for the Computer Vision Team.
+# Webinar-Notes
+
+📚 Files pertaining to our team's webinar training videos
