@@ -30,4 +30,7 @@ void main() {
     default:
       print("You age is $age");
   }
+
+  // Operators
+  true ? print("This runs") : print("This doesn't run");
 }
