@@ -1,4 +1,12 @@
+// Dart imports
+
+// Flutter imports
 import 'package:flutter/material.dart';
+
+// Package imports
+
+// Our App imports
+import 'package:example_app/widgets/home.dart';
 
 void main() => runApp(ExampleApp());
 
@@ -15,25 +23,18 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              "Hello",
-              style: TextStyle(
-                color: Colors.black,
-              ),
+      appBar: AppBar(
+        title: Text("Example App"),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.place,
             ),
-            Text(
-              "World",
-              style: TextStyle(
-                color: Colors.black,
-              ),
-            ),
-          ],
-        ),
+            onPressed: () => print("You pressed this button!"),
+          ),
+        ],
       ),
+      body: Home(),
     );
   }
 }
